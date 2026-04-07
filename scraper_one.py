@@ -35,7 +35,7 @@ count = 0
 for row in rows:
     cells = row.find_all(["th", "td"])
 
-    # Minimum structure: Rank | Title | Sales | ...
+    # Minimum structure: Rank | Title | Sales |
     if len(cells) >= 3:
         title = clean(cells[1].get_text())
         sales = clean(cells[2].get_text()) + " million"
